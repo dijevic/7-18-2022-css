@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+    height:100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+main{
+    background:url('/assets/mainbackground.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    // background-attachment: fixed;
+    min-height: 100vh;
+    filter: blur(50%);
+ 
+    overflow-x: hidden;
+}
+
+img{
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.2);
+    position: absolute;
+   
+    // left: 40%;
+    transition: .6s ease all;
+
+    &:hover{
+        border-radius: 5px;
+        transform: rotate(90deg);
+    }
+}
+
+.mnountain1{
+    left: 10%;
+    bottom: 40%;
+}
+.mnountain2{
+    right: 30%;
+    bottom: 10%;
+}
+.mnountain3{
+    left: 30%;
+    bottom: 20%;
+
+}
+.mnountain4{
+    left: 80%;
+    bottom: 30%;
+
+}
+
+h1 , p{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba($color:#000 , $alpha: 0.3);
+}
+
+p{
+    display: inline;
+    animation: typing 3s steps(26) , borderTyping 0.5s infinite step-end alternate;
+    width: 20ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+}
+h1{
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.darkenDiv{
+    background: rgba($color: #000000, $alpha: 0.2);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes typing {
+
+    from{width: 0%;}
+    
+}
+@keyframes borderTyping {
+
+    50%{border-color: transparent;}
+    
+}
+
